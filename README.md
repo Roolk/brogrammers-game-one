@@ -1,2 +1,2 @@
 # brogrammers-game-one
-discord.gg/Rdq8TUz
+connect to the discord sever for project communication discord.gg/Rdq8TUz
