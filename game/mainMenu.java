@@ -7,7 +7,7 @@ import org.newdawn.slick.state.*;
 public class mainMenu extends BasicGameState {
 
 	Image playNow;
-	Image exitGame;
+	Image exitGame; 
 
 	public mainMenu(int state){
 
