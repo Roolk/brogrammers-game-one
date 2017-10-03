@@ -24,8 +24,23 @@ public class mainMenu extends BasicGameState {
 	}
 
 	public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
+			int posX = Mouse.getX();
+			int posY = Mouse.getY();
+			// playNow button
+			if((posX > 100 && posX < 311) && (posY > 209 && 260)) {
+				if(Mouse.isButtonDown(0)) {
+					sbg.enterState(1); // the local map state 
+				}
+			}
+			// exit button
+			if((posX > 100 && posX < 311) && (posY > 109 && 160)) {
+				if(Mouse.isButtonDown(0)) {
+					System.exit(0);
+				}
+			}
 
 	}
+
 
 	public int getID() { // returns the id of the state, so 0 for menu 
 		return 0;
