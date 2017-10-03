@@ -6,8 +6,6 @@ package; // we'll name the package later depending on the class name
   * @version 1.0 
   */
 
-
-
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
 
@@ -15,8 +13,11 @@ public class Game extends StateBasedGame {
 
 	public static final String gamename = "";
 	// the different states
-	public static final int menu = 0;
-	public static final int play = 1; 
+	public static final int mainMenu = 0;
+	public static final int localMap = 1;
+	public static final int localMap = 2;
+	public static final int stats = 3;
+	public static final int combatMode = 4;
 
 	public Game(String gamename) {
 		super(gamename);
@@ -27,7 +28,7 @@ public class Game extends StateBasedGame {
 	public void initStatesList(GameContainer gc) throws SlickException {
 		this.getState(menu).init(gc, this);
 		this.getState(play).init(gc, this);
-		this.enterState(menu);
+		this.enterState(menu); // the initial state 
 
 	}
 
