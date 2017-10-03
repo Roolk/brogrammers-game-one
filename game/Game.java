@@ -15,14 +15,15 @@ public class Game extends StateBasedGame {
 	// the different states
 	public static final int mainMenu = 0;
 	public static final int localMap = 1;
-	public static final int localMap = 2;
-	public static final int stats = 3;
-	public static final int combatMode = 4;
+	public static final int stats = 2;
+	public static final int combatMode = 3;
 
 	public Game(String gamename) {
 		super(gamename);
-		this.addState(new Menu(menu));
-		this.addState(new Play(play));
+		this.addState(new Menu(mainMenu));
+		this.addState(new Play(localMap));
+		this.addState(new Stats(stats));
+		this.addState(new Fight(combatMode));
 	}
 
 	public void initStatesList(GameContainer gc) throws SlickException {
