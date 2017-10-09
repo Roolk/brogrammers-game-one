@@ -1,10 +1,10 @@
 package; // we'll name the package later depending on the class name
 
 /**
-  * @author	 Brogrammers
-  * @since '17
-  * @version 1.0 
-  */
+ * @author	 Brogrammers
+ * @since '17
+ * @version 1.0 
+ */
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
