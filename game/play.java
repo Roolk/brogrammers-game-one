@@ -1,14 +1,19 @@
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.*;
 
-public class Play extends BasicGameState {
+public class Play extends BasicGameState, Characters, Stats {
 	// list of characters and their animations 
-	Animation malv, movingUp, movingDown, movingLeft, movingRight
+	Animation malv, movingUp, movingDown, movingLeft, movingRight;
+	int[] duration = malv.walkSpeed; 
+	float malvPositionX = malv.positionX;
+	float malvPositionY = malv.positionY;
+	// repeat ^^^
+	Animation;
+
 	Image map;
 	boolean quit = false;
-	int[] duration = {200, 200};
-	float malvPositionX = 0;
-	
+
+
 	public Play(int state) {
 
 	}

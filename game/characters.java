@@ -5,6 +5,7 @@
  * @author ARP
  * @since 1.0
  * @version 1.0
+ *
  */
 
 
@@ -15,14 +16,24 @@ import org.newdawn.slick.state.*;
 public class Characters {
 
 	protected final String charName;
+	protected final int[] walkSpeed;
+	protected final float positionX;
+	protected final float positionY;
+
+	protected final Image front;
+	protected final Image back;
+	protected final Image right;
+	protected final Image left;
 
 
-	public Characters(String charName) {
+
+	public Characters(String charName, double walkSpeed, positionX, positionY, Image front, Image back, Image right, Image left) {
 		this.charName = charName;
+		this.walkSpeed = walkSpeed;
 	}
 
 	public static void main(String args[]) {
-		Character malv = new Character("Malv");
+		Character malv = new Character("Malv", {200, 200}, new Image{'res'});
 
 	}
 }
