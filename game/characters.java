@@ -27,7 +27,7 @@ public class Characters {
 
 
 
-	public Characters(String charName, double walkSpeed, positionX, positionY, Image front, Image back, Image right, Image left) {
+	public Characters(String charName, double walkSpeed, float positionX, float positionY, Image front, Image back, Image right, Image left) {
 		this.charName = charName;
 		this.walkSpeed = walkSpeed;
 	}
